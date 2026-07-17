@@ -9,7 +9,7 @@ from typing import List, Optional
 from bs4 import BeautifulSoup
 from urllib.parse import quote_plus
 import sys
-sys.path.insert(0, '/home/user/iron_warriors/shared')
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'shared'))
 from base import (
     create_app, fetch_html, SearchResult, SERPResponse,
     clean_text, get_timestamp, measure_latency
